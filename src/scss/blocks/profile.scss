@@ -7,7 +7,7 @@
   justify-content: space-around;
   align-items: flex-start;
   padding: 3rem;
-  border: 2px solid silver;
+  border: 1rem groove $primary;
   border-radius: 1rem;
 
   &__items{
@@ -50,6 +50,7 @@
 
     &:hover{
       background-color: darken($color: $primary, $amount: 5);
+      box-shadow: 0 0 1rem $primary;
     }
 
     &:active{
@@ -65,8 +66,14 @@
   }
 
   &__statistic-item{
+    margin-bottom: 0.5rem;
+    padding: 3px 1rem;
     font-size: 1.2rem;
+    line-height: 1.5rem;
     font-style: italic;
+    background-color: $primary;
+    border-radius: 5px;
+    color: #fff;
     
     & strong{
       font-size: 1rem;

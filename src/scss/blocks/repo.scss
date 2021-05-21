@@ -1,0 +1,49 @@
+@import '../utiles/variables.scss';
+
+.repo{
+
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+
+  &__title{
+    color: $primary;
+  }
+
+  &__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &__item{
+    width: 40%;
+    border: 1px groove $primary;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;   
+    
+    &:hover{
+      box-shadow: 0 0 1rem rgba(0, 0, 0, .3);
+      background-color: rgba(65, 105, 255, .8);
+    }
+
+    &:hover .repo__link{
+      color: #fff;
+    }
+  }
+
+  &__link{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+}
