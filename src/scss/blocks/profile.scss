@@ -1,0 +1,78 @@
+@import '../utiles/variables.scss';
+
+.profile{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 3rem;
+  border: 2px solid silver;
+  border-radius: 1rem;
+
+  &__items{
+    width: 30%;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__img{
+    max-width: 100%;
+    border-radius: 50%;
+  }
+
+  &__title{
+    text-align: center;
+    color: $primary;
+  }
+
+  &__location{
+    margin: 0;
+  }
+
+  &__info-title{
+    color: $primary;
+  }
+
+  &__info-text{
+    margin-top: 0;
+  }
+
+  &__link{
+    display: block;
+    background-color: $primary;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+
+    &:hover{
+      background-color: darken($color: $primary, $amount: 5);
+    }
+
+    &:active{
+      background-color: darken($color: $primary, $amount: 10);
+    }
+    
+  }
+
+  &__statistics{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__statistic-item{
+    font-size: 1.2rem;
+    font-style: italic;
+    
+    & strong{
+      font-size: 1rem;
+      margin-right: 0.5rem;
+      font-style: normal;
+    }
+  }
+    
+}

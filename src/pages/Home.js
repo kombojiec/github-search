@@ -6,7 +6,8 @@ import Search from './../components/Search';
 const Home = props => {
 
   const {users, loading} = useContext(GithubContext);
-  console.log(users)
+  const github = useContext(GithubContext);
+  console.log(github)
 
   return(
     loading?

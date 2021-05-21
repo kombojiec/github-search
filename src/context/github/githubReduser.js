@@ -10,7 +10,6 @@ const handlers = {
 }
 
 const githubReduser = (state, action) => {
-  console.log('action = ', action)
   const handler = handlers[action.type] || handlers.DEFAULT;
   return handler(state, action);
 }

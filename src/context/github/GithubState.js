@@ -25,13 +25,12 @@ const GithubState = ({children}) => {
   const searchUsers = async value => {
     setLoading();
     const response = await axios.get(withCreds(`https://api.github.com/search/users?q=${value}&`))
-    console.log(response)
     dispatch({type: SEARCH_USERS, payload: response.data.items})
   }
 
   const getUser = async name => {
     setLoading();
-    const response = await axios.get(withCreds(`https://api.github.com/users/${name}`))
+    const response = await axios.get(withCreds(`https://api.github.com/users/${name}?`))
     dispatch({type: GET_USER, payload: response.data})
   }
 
