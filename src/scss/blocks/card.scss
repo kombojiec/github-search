@@ -1,0 +1,27 @@
+@import '../utiles/variables.scss';
+
+.card{
+
+  border: 1px solid silver;
+  border-radius: 1rem;
+  padding: 1rem 0.5rem;
+
+  &__button{
+    background-color: $primary;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+    &:hover{
+      background-color: darken($color: $primary, $amount: 10%);
+    }
+
+    &:active{
+      box-shadow: inset 0 0 5px #000;
+    }
+  }
+
+}

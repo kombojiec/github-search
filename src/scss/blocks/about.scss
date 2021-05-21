@@ -1,0 +1,25 @@
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  
+  &__card{
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    background-color: $grey;
+  }
+
+  &__title{
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+
+  &__description{
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+  }  
+
+}

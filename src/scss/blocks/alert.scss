@@ -1,0 +1,28 @@
+@import '../utiles/variables.scss';
+
+.alert{
+
+  width: 90%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid silver;
+  border-radius: 1rem;
+  background-color: $grey;
+
+  &__button{
+    background: center / contain no-repeat url("../../images/error.svg");
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    margin-right: 2rem;
+
+    &:active{
+      transform: scale(.9);
+    }
+  }
+
+}
